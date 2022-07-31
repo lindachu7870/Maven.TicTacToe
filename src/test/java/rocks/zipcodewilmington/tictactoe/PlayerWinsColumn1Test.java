@@ -41,7 +41,7 @@ public class PlayerWinsColumn1Test {
         Boolean expected = false;
 
         // When
-        Boolean actual = board.isInFavorOfO();
+        Boolean actual = board.winnerO();
 
         // Then
         Assert.assertEquals(expected, actual);
@@ -54,7 +54,7 @@ public class PlayerWinsColumn1Test {
         Boolean expected = true;
 
         // When
-        Boolean actual = board.isInFavorOfX();
+        Boolean actual = board.winnerX();
 
         // Then
         Assert.assertEquals(expected, actual);
@@ -66,7 +66,7 @@ public class PlayerWinsColumn1Test {
         Boolean expected = false;
 
         // When
-        Boolean actual = board.isTie();
+        Boolean actual = board.tie();
 
         // Then
         Assert.assertEquals(expected, actual);
